@@ -31,4 +31,4 @@ over() from employees;
 -- 20	customer service	56000	68428.5714
 -- 21	customer service	55000	68428.5714
 
--- Above we can see the avg salary in front of everyone
+-- Above we can see the avg salary in front of everyone.
