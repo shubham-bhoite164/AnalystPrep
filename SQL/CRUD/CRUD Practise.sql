@@ -1,4 +1,5 @@
 create database shirts_db;
+
 use cat;
 create table shirts1(
  shirt_id int auto_increment,
