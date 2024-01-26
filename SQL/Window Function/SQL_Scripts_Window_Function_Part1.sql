@@ -58,3 +58,4 @@ end as sal_result
 from (select e.*,
 lag(salary) over(partition by dept_name order by salary desc) as lag_sal
 from employee e) as x;
+
