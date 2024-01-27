@@ -66,6 +66,8 @@ select * from campaigns;
 select * from events;
 
 
+-- Solution
+
 with cte as (
 select concat(first_name, ' ', last_name) as full_name, group_concat(distinct name, ' '), status, count(*) as total,
 rank() over(partition by status order by count(1) desc) as rnk
