@@ -13,7 +13,7 @@ select distinct DEPARTMENT from Worker;
 -- Q-4. Write an SQL query to print the first three characters of  FIRST_NAME from the Worker table.
 select substring(FIRST_NAME,1,3) from Worker;
 
--- Q-5. Write an SQL query to find the position of the alphabet (‘a’) in the first name column ‘Amitabh’ from the Worker table.
+-- Q-5. Write an SQL query to find the position of the alphabet (‘a’) in the first name column ‘Amitabh’ from the Worker table
 SELECT LOCATE('a', FIRST_NAME) AS position_of_a
 FROM Worker
 WHERE FIRST_NAME = 'Amitabh';
