@@ -12,7 +12,7 @@ from Worker;
 select replace(FIRST_NAME,'a','A') from Worker;
 
 -- Q-10. Write an SQL query to print the FIRST_NAME and LAST_NAME from the Worker table into a single column COMPLETE_NAME. 
--- A space char should separate them.
+-- A space char should separate them
 select concat(first_name, ' ', last_name) as 'Complete Name'from Worker;
 
 
