@@ -37,7 +37,7 @@ SELECT cat_id AS id, name FROM cats;
 UPDATE cats SET breed='Shorthair' WHERE breed='Tabby';
 UPDATE cats SET age=14 WHERE name='Misty';
 
--- DELETE 
+--  DELETE
 -- Delete all cats with name of 'Egg':
 DELETE FROM cats WHERE name='Egg';
 
