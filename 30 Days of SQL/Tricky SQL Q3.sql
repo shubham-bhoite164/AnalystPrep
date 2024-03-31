@@ -26,3 +26,10 @@ select row_number() over(order by team_name) as id, team_code, team_name
 from teams as t)
 select team.team_name as team, opponent.team_name as opponent from matches as team
 join matches as opponent on team.id < opponent.id;
+
+-- Solution for each team plays with every other team twice.
+with matches as (
+select row_number() over(order by team_name) as id, team_code, team_name 
+from teams as t)
+select team.team_name as team, opponent.team_name as opponent from matches as team
+join matches as opponent on team.id <> opponent.id;
