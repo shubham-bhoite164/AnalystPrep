@@ -1,4 +1,4 @@
---- Q2: Display highest and lowest salary --- 
+--- Q2: Display highest and lowest salary -- 
 
 drop table if exists employee;
 create table employee
